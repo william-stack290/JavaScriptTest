@@ -1,6 +1,6 @@
 
-var basePrice = 120;
-var shippingDest = "Canada"
+var basePrice = 55;
+var shippingDest = "America"
 var isMember = true;
 
 
@@ -35,4 +35,6 @@ else if (shippingDest == "Canada") {
     tax = 0.2 * adjustedPrice;
 }
 
-console.log(adjustedPrice + shipping + tax)
+totalPrice = ((adjustedPrice + shipping + tax))
+
+console.log(Math.round(totalPrice * 100) / 100)

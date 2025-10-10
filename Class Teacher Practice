@@ -1,4 +1,4 @@
-
+function calculateTotalCost() {
 var basePrice = 55;
 var shippingDest = "America"
 var isMember = true;
@@ -38,3 +38,6 @@ else if (shippingDest == "Canada") {
 totalPrice = ((adjustedPrice + shipping + tax))
 
 console.log(Math.round(totalPrice * 100) / 100)
+}
+
+calculateTotalCost();

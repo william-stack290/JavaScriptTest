@@ -1,18 +1,9 @@
-function increaseScore(num) {
-score = score + num
-}
-
-function getDoubleScore(num) {
-    return score * 2
-}
-
 function factorial(num) {
     if (num <= 2) {
         return 1;
     }
 return num * factorial(num - 1);
 }
-
 console.log("Factorial: " + (factorial(6)));
 
 function triangularSum(num) {
@@ -21,7 +12,6 @@ function triangularSum(num) {
     }
     return num + triangularSum(num - 1)
 }
-
 console.log("Triangular Sum: " + (triangularSum(10)));
 
 function fibonacci(num){
@@ -30,5 +20,15 @@ function fibonacci(num){
     }
     return fibonacci(num-1) + fibonacci(num-2)
 }
-
 console.log("Fibonacci: " + (fibonacci(3)));
+
+var i = 0;
+while (i <20) {
+    fibonacci(i);
+    console.log(fibonacci(i));
+    i = i + 1
+}
+
+for (var i = 0; i < 20; i = i + 1) {
+    console.log(fibonacci(i));
+}
